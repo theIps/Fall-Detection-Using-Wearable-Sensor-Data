@@ -23,3 +23,12 @@
 8. Applying various models
 9. Comparing the models on basis of sensitivity and specificity
 
+
+## Website-
+- website folder contains all files related to website
+- To run the website, do following steps-
+1. Copy all these files to Home/ directory
+2. Open terminal, create a http server using python by executing following command-
+   python -m http.server
+3. Install "Allow Access Control" extension on chrome
+4. Run the website by clicking on frontend.html
