@@ -2,7 +2,7 @@
 
 ## Data Preparation (window**)
 (** correspond to 10,15,20,25 window sizes)
-- Each folder contains files related to that window size in which
+- Each folder contains files related to that window size in which :-
 - fall**.py , nearfall**.py, adl**.py in this the selected records are fetched for various subcategories in fall, nearfall and adl trials.
 - fallagg**.py , nearfallagg**.py, adlagg**.py in this the fetched records are aggregated for various subcategories in fall, nearfall and adl trials.
 - dataset**.py is preparing dataset for fall/non-fall classification
