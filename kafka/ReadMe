@@ -1,1 +1,4 @@
 Files corresponding to kafka.
+
+Save the trained model using following code snippet-
+pipeline.save("Pipeline_Fall")
