@@ -24,6 +24,11 @@
 9. Comparing the models on basis of sensitivity and specificity
 
 
+## Machine Learning
+1. BDProj.ipynb: This file contains Spark MLlib code corresponding to fall/non-fall classification. 
+2. BDProj2.ipynb: This file contains Spark MLlib code corresponding to Multi classification. 
+
+
 ## Kafka-
 There are 2 codes corresponding to kafka:
 1. kafka_producer: In this code we are publishing the data in to the topic 'test' of the kafka message broker. The published data is collected from the sensors. We are publishing the data at the similar rate to the one collected from the actual trials in order to keep the stream rate close to real-time. 
