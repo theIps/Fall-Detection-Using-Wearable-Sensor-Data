@@ -51,5 +51,5 @@ The structured streaming is vectorized and prediction is made on the transformed
 ## Contributions-
 
 - Inderpreet:  Data Preparation (Corresponding to different window sizes), EDA (for each window), Machine Learning Models (Logistic, Decision Tree, Majority Voting), Kafka Integration and Detection on Simulated Data, Report
-- Prabhjot: Data Preparation (Corresponding to different window sizes), EDA (for each window), Machine Learning Models (Gaussian Naive Baise, Ada Boost), Web Dashboard
+- Prabhjot: Data Preparation (Corresponding to different window sizes), EDA (for each window), Machine Learning Models (Gaussian Naive Baise, Ada Boost), Web Dashboard, Kafka
 - Amandeep: Data Preparation (Corresponding to different window sizes), EDA (for each window), Machine Learning Models (RandomForest, Gradient Boosting), Kafka Integration and Detection on Simulated Data, Poster, Video
