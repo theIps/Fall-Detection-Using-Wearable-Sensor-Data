@@ -1,1 +1,25 @@
-Files Corresponding to window size 1sec
+# Files Corresponding to window size 1sec
+
+
+## Code Snippet Corresponding to Cassandra-
+import pyspark_cassandra
+from cassandra.cluster import Cluster
+
+from cassandra.query import BatchStatement, SimpleStatement
+
+conf = SparkConf().setAppName('example code') \
+        .set('spark.cassandra.connection.host', ','.join(cluster_seeds))
+
+sc = pyspark_cassandra.CassandraSparkContext(conf=conf)
+spark = SparkSession.builder.getOrCreate()
+assert sys.version_info >= (3, 5)  # make sure we have Python 3.5+
+assert sc.version >= '2.2'  # make sure we have Spark 2.2+
+
+#output = sys.argv[1]
+keyspace = 'isa21'
+
+def df_for(keyspace, table, split_size=100):
+    df = spark.createDataFrame(sc.cassandraTable(keyspace, table, split_size=split_size).setName(table))
+    df.createOrReplaceTempView(table)
+
+fall.saveToCassandra(keyspace, 'fallagg')
