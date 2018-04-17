@@ -24,6 +24,15 @@
 9. Comparing the models on basis of sensitivity and specificity
 
 
+## Kafka-
+There are 2 codes corresponding to kafka:
+1. kafka_producer: In this code we are publishing the data in to the topic 'test' of the kafka message broker. The published data is collected from the sensors. We are publishing the data at the similar rate to the one collected from the actual trials in order to keep the stream rate close to real-time. 
+
+2. spark_kafka_consumer: In this program, we are consuming the data from the kafka message broker in to the spark streaming context. Then we are loading the saved trained machine learning model in to program execution.
+
+The structured streaming is vectorized and prediction is made on the transformed dataframe using the loaded model. These predictions are shown on the console. 
+
+
 ## Website-
 - "website" folder contains all files related to website
 - To run the website, do following steps-
@@ -32,3 +41,5 @@
    python -m http.server
 3. Install "Allow Access Control" extension on chrome
 4. Run the website by clicking on frontend.html
+
+
